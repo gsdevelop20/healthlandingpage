@@ -20,112 +20,147 @@ import {
 // Dados estáticos dos planos (definidos fora do componente para evitar recriação)
 const plans = [
     {
-        title: 'Eletrocardiograma',
+        title: 'ASO-ADMISSIONAL/DEMISSIONAL',
+        description: '',
+        btnClass: 'btn-aso-admissional',
+        imageSrc: '/images/home/icons/exame-medico.png',
+        url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar um exame ASO Admissionais/Demissionais.'
+    },
+    {
+        title: 'ECGRAFIA/\nULTRASSONOGRAFIA',
+        description: '',
+        btnClass: 'btn-ecografia-utrasonografia',
+        imageSrc: '/images/home/icons/technology_15071406.png',
+        url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar um exame de Ecografia/Ultrassonografia.'
+    },
+    {
+        title: 'ELETROCARDIOGRAMA',
         description: '',
         btnClass: 'btn-eletro',
         imageSrc: '/images/home/icons/eletrocardiograma.png',
         url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar um exame de Eletrocardiograma.'
     },
     {
-        title: 'Exame ASO',
+        title: 'EXAME ASO',
         description: '',
         btnClass: 'btn-aso',
         imageSrc: '/images/home/icons/exame-medico.png',
         url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar um exame ASO.'
     },
     {
-        title: 'Exames Laboratoriais',
+        title: 'EXAME BETA HCG',
         description: '',
-        btnClass: 'btn-lab',
-        imageSrc: '/images/home/icons/exame-de-saude.png',
-        url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar exames laboratoriais.'
+        btnClass: 'btn-ecografia-utrasonografia',
+        imageSrc: '/images/home/icons/exame-medico.png',
+        url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar um exame de Beta HCG.'
     },
     {
-        title: 'Exames de aptidão física',
+        title: 'EXAME BIO IMPEDÂNCIA',
+        description: '',
+        btnClass: 'btn-bio-impedancia',
+        imageSrc: '/images/home/icons/exame-medico.png',
+        url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar um exame de Bio Impedância.'
+    },
+    {
+        title: 'EXAME TOXICOLÓGICO',
+        description: '',
+        btnClass: 'btn-toxicológico',
+        imageSrc: '/images/home/icons/exame-medico.png',
+        url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar um exame toxicológico.'
+    },
+    {
+        title: 'EXAMES DE APTIDÃO FÍSICA',
         description: '',
         btnClass: 'btn-aptidao',
         imageSrc: '/images/home/icons/exame-de-saude.png',
         url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar um exame de aptidão física.'
     },
     {
-        title: 'Ecografia/Ultrassonografia',
+        title: 'EXAMES LABORATORIAIS',
         description: '',
-        btnClass: 'btn-ecografia-utrasonografia',
-        imageSrc: '/images/home/icons/technology_15071406.png',
-        url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar um exame de Ecografia/Ultrassonografia.'
+        btnClass: 'btn-lab',
+        imageSrc: '/images/home/icons/exame-de-saude.png',
+        url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar exames laboratoriais.'
     }
 ];
 
 const cards = [
     {
-        title: 'Dermatologia',
-        description: '',
-        btnClass: 'btn-der',
-        imageSrc: '/images/home/icons/medico.png',
-        url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar uma consulta com um dermatologista.'
-    },
-    {
-        title: 'Endocrinologia',
-        description: '',
-        btnClass: 'btn-end',
-        imageSrc: '/images/home/icons/medico.png',
-        url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar uma consulta com um endocrinologista.'
-    },
-    {
-        title: 'Ginecologia',
-        description: '',
-        btnClass: 'btn-gin',
-        imageSrc: '/images/home/icons/medico.png',
-        url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar uma consulta com um ginecologista.'
-    },
-    {
-        title: 'Nutricionista',
-        description: '',
-        btnClass: 'btn-nut',
-        imageSrc: '/images/home/icons/medico.png',
-        url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar uma consulta com um nutricionista.'
-    },
-    {
-        title: 'Ortopedia',
-        description: '',
-        btnClass: 'btn-ort',
-        imageSrc: '/images/home/icons/medico.png',
-        url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar uma consulta com um ortopedista.'
-    },
-    {
-        title: 'Pediatria',
-        description: '',
-        btnClass: 'btn-ped',
-        imageSrc: '/images/home/icons/medico.png',
-        url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar uma consulta com um pediatra.'
-    },
-    {
-        title: 'Psicologia',
-        description: '',
-        btnClass: 'btn-psic',
-        imageSrc: '/images/home/icons/medico.png',
-        url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar uma consulta com um psicólogo.'
-    },
-    {
-        title: 'Psiquiatria',
-        description: '',
-        btnClass: 'btn-psiq',
-        imageSrc: '/images/home/icons/medico.png',
-        url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar uma consulta com um psiquiatra.'
-    },
-    {
-        title: 'Cardiologia',
+        title: 'CARDIOLOGIA',
         description: '',
         btnClass: 'btn-car',
         imageSrc: '/images/home/icons/medico.png',
         url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar uma consulta com um cardiologista.'
     },
     {
-        title: 'Oftalmologia',
+        title: 'CLÍNICA MÉDICA',
+        description: '',
+        btnClass: 'btn-clinicaMed',
+        imageSrc: '/images/home/icons/medico.png',
+        url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar uma consulta com um clinico.'
+    },
+    {
+        title: 'DERMATOLOGIA',
+        description: '',
+        btnClass: 'btn-der',
+        imageSrc: '/images/home/icons/medico.png',
+        url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar uma consulta com um dermatologista.'
+    },
+    {
+        title: 'ENDOCRINOLOGIA',
+        description: '',
+        btnClass: 'btn-end',
+        imageSrc: '/images/home/icons/medico.png',
+        url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar uma consulta com um endocrinologista.'
+    },
+    {
+        title: 'GINECOLOGIA',
+        description: '',
+        btnClass: 'btn-gin',
+        imageSrc: '/images/home/icons/medico.png',
+        url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar uma consulta com um ginecologista.'
+    },
+    {
+        title: 'NUTRICIONISTA',
+        description: '',
+        btnClass: 'btn-nut',
+        imageSrc: '/images/home/icons/medico.png',
+        url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar uma consulta com um nutricionista.'
+    },
+    {
+        title: 'OFTALMOLOGIA',
         description: '',
         btnClass: 'btn-oft',
         imageSrc: '/images/home/icons/medico.png',
         url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar uma consulta com um oftalmologista.'
+    },
+    {
+        title: 'ORTOPEDIA',
+        description: '',
+        btnClass: 'btn-ort',
+        imageSrc: '/images/home/icons/medico.png',
+        url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar uma consulta com um ortopedista.'
+    },
+    {
+        title: 'PEDIATRIA',
+        description: '',
+        btnClass: 'btn-ped',
+        imageSrc: '/images/home/icons/medico.png',
+        url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar uma consulta com um pediatra.'
+    },
+    {
+        title: 'PSICOLOGIA',
+        description: '',
+        btnClass: 'btn-psic',
+        imageSrc: '/images/home/icons/medico.png',
+        url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar uma consulta com um psicólogo.'
+    },
+    {
+        title: 'PSIQUIATRIA',
+        description: '',
+        btnClass: 'btn-psiq',
+        imageSrc: '/images/home/icons/medico.png',
+        url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar uma consulta com um psiquiatra.'
     }
 ];
 
