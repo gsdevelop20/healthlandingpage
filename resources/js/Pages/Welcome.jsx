@@ -39,6 +39,20 @@ const plans = [
         btnClass: 'btn-lab',
         imageSrc: '/images/home/icons/exame-de-saude.png',
         url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar exames laboratoriais.'
+    },
+    {
+        title: 'Exames de aptidão física',
+        description: '',
+        btnClass: 'btn-aptidao',
+        imageSrc: '/images/home/icons/exame-de-saude.png',
+        url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar um exame de aptidão física.'
+    },
+    {
+        title: 'Ecografia/Ultrassonografia',
+        description: '',
+        btnClass: 'btn-ecografia-utrasonografia',
+        imageSrc: '/images/home/icons/technology_15071406.png',
+        url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar um exame de Ecografia/Ultrassonografia.'
     }
 ];
 
@@ -98,6 +112,20 @@ const cards = [
         btnClass: 'btn-psiq',
         imageSrc: '/images/home/icons/medico.png',
         url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar uma consulta com um psiquiatra.'
+    },
+    {
+        title: 'Cardiologia',
+        description: '',
+        btnClass: 'btn-car',
+        imageSrc: '/images/home/icons/medico.png',
+        url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar uma consulta com um cardiologista.'
+    },
+    {
+        title: 'Oftalmologia',
+        description: '',
+        btnClass: 'btn-oft',
+        imageSrc: '/images/home/icons/medico.png',
+        url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar uma consulta com um oftalmologista.'
     }
 ];
 
@@ -235,7 +263,7 @@ export default function Welcome({auth, laravelVersion, phpVersion}) {
                             {/* Seção do Banner */}
                             <section aria-labelledby="banner-heading">
                                 <div
-                                    className="w-full banner flex justify-content-center flex-wrap gap-8"
+                                    className="w-full banner justify-content-center flex justify-content-center flex-wrap gap-8"
                                     style={{backgroundImage: `url("/images/home/banners.webp")`}}
                                     role="img"
                                     aria-label="Banner da Clínica Amor Brasil com imagem de fundo"

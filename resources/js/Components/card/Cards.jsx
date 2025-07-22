@@ -46,7 +46,7 @@ const ProductCard = memo(function ProductCard({product}) {
             )}
             <a
                 href={product.url}
-                className={`btn w-full mt-1 text-white ` + product.btnClass}
+                className={`btn w-full btn-pulsar mt-1 text-white ` + product.btnClass}
                 aria-label={`Agendar consulta para ${product.title}`}
                 target="_blank"
                 rel="noopener noreferrer"
