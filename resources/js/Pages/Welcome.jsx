@@ -20,18 +20,18 @@ import {
 // Dados estáticos dos planos (definidos fora do componente para evitar recriação)
 const plans = [
     {
-        title: 'ASO-ADMISSIONAL/DEMISSIONAL',
-        description: '',
-        btnClass: 'btn-aso-admissional',
-        imageSrc: '/images/home/icons/exame-medico.png',
-        url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar um exame ASO Admissionais/Demissionais.'
-    },
-    {
-        title: 'ECGRAFIA/\nULTRASSONOGRAFIA',
+        title: 'ECOGRAFIA/\nULTRASSONOGRAFIA',
         description: '',
         btnClass: 'btn-ecografia-utrasonografia',
         imageSrc: '/images/home/icons/technology_15071406.png',
         url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar um exame de Ecografia/Ultrassonografia.'
+    },
+    {
+        title: 'EXAME ASO-ADMISSIONAL/DEMISSIONAL',
+        description: '',
+        btnClass: 'btn-aso-admissional',
+        imageSrc: '/images/home/icons/exame-medico.png',
+        url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar um exame ASO Admissionais/Demissionais.'
     },
     {
         title: 'ELETROCARDIOGRAMA',
@@ -39,13 +39,6 @@ const plans = [
         btnClass: 'btn-eletro',
         imageSrc: '/images/home/icons/eletrocardiograma.png',
         url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar um exame de Eletrocardiograma.'
-    },
-    {
-        title: 'EXAME ASO',
-        description: '',
-        btnClass: 'btn-aso',
-        imageSrc: '/images/home/icons/exame-medico.png',
-        url: 'https://wa.me/5561996246801?text=Olá, gostaria de agendar um exame ASO.'
     },
     {
         title: 'EXAME BETA HCG',
